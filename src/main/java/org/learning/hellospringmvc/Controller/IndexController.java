@@ -11,4 +11,16 @@ public class IndexController {
     public String index(){
         return "home";
     }
+
+    @GetMapping("/about-us")
+    public String aboutUs(){
+        // ritorna il nome del template about.html che si trova in resources/templates
+        return "about-us";
+    }
+
+    @GetMapping("/terms-and-conditions")
+    public String termsAndConditions(){
+        // ritorna il nome del template about.html che si trova in resources/templates
+        return "terms-and-conditions";
+    }
 }
